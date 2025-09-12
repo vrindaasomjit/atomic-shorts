@@ -1,0 +1,76 @@
+# OS-specific
+.DS_Store
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pylint.d/
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.venv*/
+.python-version
+
+# Editors/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Build/distribution artifacts
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+*.egg
+MANIFEST
+pip-wheel-metadata/
+
+# Coverage reports
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Notebooks
+*.ipynb_checkpoints/
+
+# Node (if present)
+node_modules/
+
+# Logs
+*.log
+
+# Environment and secrets
+.env
+*.env
+.env.*
+.env.local
+
+# Agent-generated outputs
+*_validated.json
+*_validated.md
+*_validation_report.json
+validation_report_*.json
+
+# Local data caches (optional)
+faiss_index/
+cache/
