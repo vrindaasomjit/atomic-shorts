@@ -1,4 +1,3 @@
-# atomic-shorts
 ![Logo](images/logo.png)
 
 AtomicShorts is a scientist-in-the-loop agentic workflow for prompt-to-video generation for materials science and chemistry. It aims to empower scientists to create short, narrated videos to convey their ideas across age groups and expertise levels. 
