@@ -1,66 +1,73 @@
 {
   "prompt": "Explain quantum coherence for a high school audience.",
-  "title": "Quantum Coherence: The Synchronized Dance of the Quantum World",
+  "title": "Quantum Coherence: The Symphony of the Quantum World",
   "age_level": "High School",
-  "video_length": "60 seconds",
+  "video_length": "Approximately 55 seconds",
   "scenes": [
     {
       "scene_id": 1,
-      "title": "Quantum Coherence: The Synchronized Dance",
-      "narration": "Welcome to the quantum world, where tiny particles behave strangely. Quantum coherence is when these particles, acting like waves, maintain a stable, synchronized 'rhythm' or phase relationship [3]. This allows them to interfere with each other, either combining to make a stronger wave or canceling out [3].",
+      "title": "Introduction to Quantum Coherence",
+      "narration": "In the quantum world, particles can maintain their states in a perfectly synchronized way, like instruments in an orchestra [1]. This is quantum coherence: their states are precisely defined and stable [3].",
       "visuals": [
         {
-          "description": "Scene opens with abstract, glowing, fuzzy spheres (representing quantum particles) floating and gently pulsating. They have a slight wave-like distortion."
+          "description": "Title card: 'Quantum Coherence: The Symphony of the Quantum World.'"
         },
         {
-          "description": "Two identical blue sine waves, perfectly in phase, move towards each other from opposite sides of the screen."
+          "description": "Dark, cosmic background."
         },
         {
-          "description": "When they meet, they combine to form a single, larger amplitude blue wave (constructive interference). This larger wave then continues to propagate."
+          "description": "A single, small, glowing blue sphere (representing a quantum particle) appears in the center, gently pulsating. Its outline is slightly blurred, suggesting its wave-like nature or quantum uncertainty."
         },
         {
-          "description": "Next, two identical blue sine waves, perfectly out of phase (one crest aligns with the other's trough), move towards each other."
-        },
-        {
-          "description": "When they meet, they completely cancel each other out, resulting in a flat line (destructive interference)."
-        },
-        {
-          "description": "Text overlay: 'Quantum Coherence: Stable Phase Relationship [3]'"
+          "description": "Subtle, faint wave-like ripples emanate from the sphere."
         }
       ]
     },
     {
       "scene_id": 2,
-      "title": "Decoherence: Losing the Rhythm",
-      "narration": "But this delicate synchronization is fragile. Interactions with the environment, like heat or other particles, can disrupt this 'rhythm,' causing the system to lose its coherence – a process called decoherence [1, 3]. This makes quantum systems behave more like everyday objects.",
+      "title": "Superposition and Interference",
+      "narration": "Quantum particles can exist in multiple states at once (superposition) and behave like waves. When coherent, these 'quantum waves' are perfectly in sync, allowing them to interfere and create patterns, like ripples [1], [3].",
       "visuals": [
         {
-          "description": "A single, clear, coherent blue sine wave propagates smoothly from left to right."
+          "description": "The blue sphere from Scene 1 appears. It then splits into two semi-transparent blue spheres, briefly existing in two positions simultaneously (superposition)."
         },
         {
-          "description": "Small, chaotic, grey dots (representing environmental particles or noise) start to appear from the top and bottom, randomly colliding with the wave."
+          "description": "Then, these spheres smoothly transform into two gentle, oscillating sine waves, perfectly aligned and moving in sync from left to right."
         },
         {
-          "description": "As the grey dots interact, the blue wave becomes increasingly distorted, jumbled, and loses its smooth, predictable shape, eventually breaking down into a fuzzy, undefined cloud of blue particles."
-        },
-        {
-          "description": "Text overlay: 'Decoherence: Loss of Coherence [1, 3]'"
+          "description": "As they overlap, they combine to form a single, larger amplitude wave (constructive interference), highlighted in a brighter blue."
         }
       ]
     },
     {
       "scene_id": 3,
-      "title": "Why Coherence Matters",
-      "narration": "Controlling coherence is crucial for quantum technologies like quantum computers, which could solve impossible problems, and for super-sensitive quantum sensors [1]. It's a key challenge and an exciting frontier in science!",
+      "title": "Decoherence: Losing the Sync",
+      "narration": "But this delicate synchronization is fragile. Interactions with the environment, like bumping into other atoms, cause quantum waves to lose alignment. This is decoherence: the quantum 'magic' disappears as the particle settles into a single, definite state [3].",
       "visuals": [
         {
-          "description": "Abstract, glowing, interconnected blue spheres (representing qubits) briefly appear and pulse, forming a network. Text 'Quantum Computing' appears next to them."
+          "description": "The two perfectly synchronized waves from the previous scene are shown."
         },
         {
-          "description": "Transition to a stylized, intricate sensor-like device with glowing blue lines and a central pulsing light. Text 'Quantum Sensing' appears next to it."
+          "description": "Small, chaotic, grey spheres (representing environmental particles or 'noise') start to randomly collide with the waves."
         },
         {
-          "description": "The scene ends with the main title 'Quantum Coherence: The Synchronized Dance of the Quantum World' fading in."
+          "description": "With each collision, the waves quickly lose their perfect alignment, becoming jagged and misaligned."
+        },
+        {
+          "description": "Eventually, the waves collapse into a single, definite, non-wavy blue sphere, representing the loss of quantum properties."
+        }
+      ]
+    },
+    {
+      "scene_id": 4,
+      "title": "Why is it Important?",
+      "narration": "Controlling quantum coherence is vital for revolutionary technologies. It's the secret behind quantum computers, solving problems impossible for today's supercomputers [1]. It's key to unlocking the quantum world's potential.",
+      "visuals": [
+        {
+          "description": "A stylized representation of a quantum computer chip appears, featuring a grid of small, glowing blue squares (qubits). Subtle light pulses or data flow animations within the chip."
+        },
+        {
+          "description": "Text labels appear: 'Quantum Computing,' 'New Materials,' emphasizing applications."
         }
       ]
     }
