@@ -1,0 +1,112 @@
+nitrogen vacancy
+NV-center
+NV center
+nitrogen-vacancy
+spin qubit
+triplet state
+singlet state
+diamond lattice
+quantum defect
+energy level diagram
+optical emission
+red glow
+ground state
+excited state
+spin sublevel
+magnetic field
+electron spin
+quantum computing
+quantum sensing
+quantum imaging
+defect center
+point defect
+carbon lattice
+crystal structure
+photoluminescence
+fluorescence
+optical readout
+spin polarization
+spin manipulation
+microwave field
+optically detected magnetic resonance
+ODMR
+phonon coupling
+vibronic transition
+zero phonon line
+ZPL
+sideband
+intersystem crossing
+shelving state
+dark state
+bright state
+coherence time
+dephasing
+relaxation
+T1 relaxation
+T2 coherence
+Rabi frequency
+Rabi oscillation
+spin echo
+dynamical decoupling
+quantum coherence
+quantum entanglement
+quantum information
+solid state qubit
+room temperature
+cryogenic
+nanodiamond
+bulk diamond
+CVD diamond
+HPHT diamond
+ion implantation
+irradiation
+annealing
+charge state
+neutral NV
+negative NV
+electronic structure
+orbital angular momentum
+spin-orbit coupling
+hyperfine interaction
+nuclear spin
+carbon-13
+nitrogen-14
+nitrogen-15
+isotope effect
+strain coupling
+electric field
+Stark shift
+piezoelectric effect
+flexoelectricity
+phonon
+vibrational mode
+local mode
+breathing mode
+symmetric stretch
+Jahn-Teller distortion
+crystal field
+ligand field
+molecular orbital
+density functional theory
+DFT
+ab initio
+configuration interaction
+multireference
+ensemble averaging
+single photon
+photon antibunching
+second-order correlation
+Hanbury Brown-Twiss
+confocal microscopy
+wide-field imaging
+super-resolution
+STED microscopy
+magnetometry
+electrometry
+thermometry
+pressure sensing
+biological sensing
+cellular imaging
+nanoparticle tracking
+gyroscopy
+accelerometry

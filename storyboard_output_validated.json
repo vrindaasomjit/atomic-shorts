@@ -1,0 +1,68 @@
+{
+  "prompt": "Explain quantum coherence for a high school audience.",
+  "title": "Quantum Coherence: The Synchronized Dance of the Quantum World",
+  "age_level": "High School",
+  "video_length": "60 seconds",
+  "scenes": [
+    {
+      "scene_id": 1,
+      "title": "Quantum Coherence: The Synchronized Dance",
+      "narration": "Welcome to the quantum world, where tiny particles behave strangely. Quantum coherence is when these particles, acting like waves, maintain a stable, synchronized 'rhythm' or phase relationship [3]. This allows them to interfere with each other, either combining to make a stronger wave or canceling out [3].",
+      "visuals": [
+        {
+          "description": "Scene opens with abstract, glowing, fuzzy spheres (representing quantum particles) floating and gently pulsating. They have a slight wave-like distortion."
+        },
+        {
+          "description": "Two identical blue sine waves, perfectly in phase, move towards each other from opposite sides of the screen."
+        },
+        {
+          "description": "When they meet, they combine to form a single, larger amplitude blue wave (constructive interference). This larger wave then continues to propagate."
+        },
+        {
+          "description": "Next, two identical blue sine waves, perfectly out of phase (one crest aligns with the other's trough), move towards each other."
+        },
+        {
+          "description": "When they meet, they completely cancel each other out, resulting in a flat line (destructive interference)."
+        },
+        {
+          "description": "Text overlay: 'Quantum Coherence: Stable Phase Relationship [3]'"
+        }
+      ]
+    },
+    {
+      "scene_id": 2,
+      "title": "Decoherence: Losing the Rhythm",
+      "narration": "But this delicate synchronization is fragile. Interactions with the environment, like heat or other particles, can disrupt this 'rhythm,' causing the system to lose its coherence – a process called decoherence [1, 3]. This makes quantum systems behave more like everyday objects.",
+      "visuals": [
+        {
+          "description": "A single, clear, coherent blue sine wave propagates smoothly from left to right."
+        },
+        {
+          "description": "Small, chaotic, grey dots (representing environmental particles or noise) start to appear from the top and bottom, randomly colliding with the wave."
+        },
+        {
+          "description": "As the grey dots interact, the blue wave becomes increasingly distorted, jumbled, and loses its smooth, predictable shape, eventually breaking down into a fuzzy, undefined cloud of blue particles."
+        },
+        {
+          "description": "Text overlay: 'Decoherence: Loss of Coherence [1, 3]'"
+        }
+      ]
+    },
+    {
+      "scene_id": 3,
+      "title": "Why Coherence Matters",
+      "narration": "Controlling coherence is crucial for quantum technologies like quantum computers, which could solve impossible problems, and for super-sensitive quantum sensors [1]. It's a key challenge and an exciting frontier in science!",
+      "visuals": [
+        {
+          "description": "Abstract, glowing, interconnected blue spheres (representing qubits) briefly appear and pulse, forming a network. Text 'Quantum Computing' appears next to them."
+        },
+        {
+          "description": "Transition to a stylized, intricate sensor-like device with glowing blue lines and a central pulsing light. Text 'Quantum Sensing' appears next to it."
+        },
+        {
+          "description": "The scene ends with the main title 'Quantum Coherence: The Synchronized Dance of the Quantum World' fading in."
+        }
+      ]
+    }
+  ]
+}
