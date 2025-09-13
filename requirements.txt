@@ -1,0 +1,14 @@
+langchain-openai>=0.1.20
+langchain-google-genai>=2.0.0
+langchain-anthropic>=0.1.23
+langgraph>=0.2.29
+langchain-core>=0.3.6
+langchain-community>=0.3.5
+pypdf>=4.2.0
+python-dotenv>=1.0.1
+gradio>=4.44.0
+faiss-cpu>=1.8.0.post1
+sentence-transformers>=3.0.1
+gTTS>=2.5.1
+moviepy>=1.0.3
+manim>=0.19,<0.21

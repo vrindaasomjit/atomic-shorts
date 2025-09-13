@@ -780,44 +780,92 @@ def validate_content(state: ValidationAgentState) -> ValidationAgentState:
         
         response = llm.invoke(messages)
         content = response.content
-        
-        # Parse response for original format - handle Gemini markdown formatting
-        try:
-            content_str = content if isinstance(content, str) else str(content)
-            
-            # Strip markdown code blocks that Gemini often adds
-            if content_str.strip().startswith('```json'):
-                # Extract JSON from ```json ... ``` blocks
-                lines = content_str.strip().split('\n')
+
+        # Helper: normalize AI content to string and extract a JSON object/array if present
+        def _normalize_content_to_text(c) -> str:
+            if isinstance(c, str):
+                return c
+            # LangChain AIMessage.content can be a list of parts; join their text
+            if isinstance(c, list):
+                parts = []
+                for p in c:
+                    try:
+                        # Try common shapes from providers
+                        if isinstance(p, dict) and "text" in p:
+                            parts.append(p.get("text", ""))
+                        else:
+                            parts.append(str(p))
+                    except Exception:
+                        parts.append(str(p))
+                return "\n".join(parts)
+            try:
+                return str(c)
+            except Exception:
+                return ""
+
+        def _extract_json_block(s: str) -> Optional[str]:
+            t = (s or "").strip()
+            if not t:
+                return None
+            # Prefer fenced ```json blocks
+            if t.startswith('```'):
+                lines = t.split('\n')
                 json_lines = []
-                in_json = False
-                for line in lines:
-                    if line.strip().startswith('```json'):
-                        in_json = True
-                        continue
-                    elif line.strip() == '```' and in_json:
-                        break
-                    elif in_json:
-                        json_lines.append(line)
-                content_str = '\n'.join(json_lines)
-            elif content_str.strip().startswith('```'):
-                # Extract from generic code blocks
-                lines = content_str.strip().split('\n')
-                json_lines = []
-                in_json = False
+                in_block = False
                 for line in lines:
                     if line.strip().startswith('```'):
-                        if in_json:
-                            break
-                        else:
-                            in_json = True
+                        if not in_block:
+                            in_block = True
                             continue
-                    elif in_json:
+                        else:
+                            break
+                    if in_block:
                         json_lines.append(line)
-                content_str = '\n'.join(json_lines)
-            
-            result = json.loads(content_str)
-                    
+                candidate = "\n".join(json_lines).strip()
+                if candidate:
+                    return candidate
+            # Scan for balanced JSON object or array
+            def scan_balanced(open_ch: str, close_ch: str) -> Optional[str]:
+                i = 0
+                n = len(t)
+                while i < n:
+                    if t[i] == open_ch:
+                        depth = 0
+                        j = i
+                        in_str = False
+                        esc = False
+                        while j < n:
+                            ch = t[j]
+                            if in_str:
+                                if esc:
+                                    esc = False
+                                elif ch == '\\':
+                                    esc = True
+                                elif ch == '"':
+                                    in_str = False
+                            else:
+                                if ch == '"':
+                                    in_str = True
+                                elif ch == open_ch:
+                                    depth += 1
+                                elif ch == close_ch:
+                                    depth -= 1
+                                    if depth == 0:
+                                        return t[i:j+1]
+                            j += 1
+                    i += 1
+                return None
+            candidate = scan_balanced('{', '}') or scan_balanced('[', ']')
+            return candidate
+
+        # Parse response for original format - handle provider quirks robustly
+        try:
+            content_str = _normalize_content_to_text(content)
+            json_candidate = _extract_json_block(content_str)
+            if json_candidate is None:
+                # Nothing parseable; force failure path
+                raise json.JSONDecodeError("No JSON found in response", content_str, 0)
+            result = json.loads(json_candidate)
         except (json.JSONDecodeError, ValueError) as e:
             print(f"   - ⚠️ Failed to parse LLM response as JSON: {e}")
             # Fallback to original format structure
